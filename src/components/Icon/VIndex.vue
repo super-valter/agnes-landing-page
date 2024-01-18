@@ -14,6 +14,8 @@
   const Facebook = defineAsyncComponent(() => import('./Facebook.vue'))
   const Pinterest = defineAsyncComponent(() => import('./Pinterest.vue'))
   const Instagran = defineAsyncComponent(() => import('./Instagran.vue'))
+  const Youtube = defineAsyncComponent(() => import('./Youtube.vue'))
+  const LocationDot = defineAsyncComponent(() => import('./LocationDot.vue'))
   
   const iconProps = defineProps({
     name: {
@@ -33,6 +35,8 @@
     'facebook': Object.freeze(Facebook),
     'instagran': Object.freeze(Instagran),
     'pinterest': Object.freeze(Pinterest),
+    'youtube': Object.freeze(Youtube),
+    'location': Object.freeze(LocationDot),
   }
   
   onMounted(() => {
