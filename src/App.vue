@@ -20,7 +20,7 @@
         class="col-span-3 sm:col-span-1"
       >
         <img
-          :src="getImageHighlight(highlight.image)"
+          :src="`./src/assets/images/${highlight.image}.jpg`"
           :alt="highlight.title"
           class="mb-3 pr-3 w-full rounded-3xl"
         />
@@ -36,13 +36,13 @@
 
 <script setup>
 
-import { store } from './store/index'
+import { store } from '@/store/index'
 
-import VFooter from './components/VFooter.vue'
-import VHeader from './components/VHeader.vue'
+import VFooter from '@/components/VFooter.vue'
+import VHeader from '@/components/VHeader.vue'
 
 const getImageHighlight = (imgage) => {
-  return `../assets/images/${imgage}.jpg`;
+  return `./assets/images/${imgage}.jpg`;
 };
 
 </script>
