@@ -4,7 +4,7 @@
       <div class="grid grid-cols-12">
         <div class="col-span-4">
           <h3 class="text-xl text-brand-main font-semibold">Chama a Rasta</h3>
-          <ul class="">
+          <ul>
             <li
               v-for="contatc in store.contatcs"
               :key="contatc.id"
@@ -14,6 +14,7 @@
                 :href="contatc.link"
                 class="flex items-center leading-5"
                 :aria-label="contatc.icon"
+                v-if="contatc.id != 5"
               >
                 <icon
                   :name="contatc.icon"
