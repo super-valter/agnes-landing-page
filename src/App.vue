@@ -7,9 +7,9 @@
         Ateliê e loja de costura criativa
       </h1>
       <p class="mt-3 mx-auto">
-        Criado para atender as alunas e interessados em artesanato de forma ágil
-        e prática. Você também poderá contar com aulas, lives e cursos através
-        das nossas redes sociais.
+        Criado para atender as alunas e interessados em costura criativa de
+        forma prática. Você também poderá contar com aulas presenciais e on-line
+        através de conteúdos diários em nossas redes sociais.
       </p>
     </section>
 
@@ -19,14 +19,16 @@
         :key="highlight.id"
         class="col-span-3 sm:col-span-1"
       >
-        <img
-          :src="highlight.image"
-          :alt="highlight.title"
-          class="mb-3 pr-3 w-full rounded-3xl"
-        />
-        <h1 class="text-center text-xl font-semibold uppercase">
-          {{ highlight.title }}
-        </h1>
+        <a :href="highlight.link" target="_blank">
+          <img
+            :src="highlight.image"
+            :alt="highlight.title"
+            class="mb-3 pr-3 w-full rounded-3xl"
+          />
+          <h1 class="text-center text-xl font-semibold px-5">
+            {{ highlight.title }}
+          </h1>
+        </a>
       </div>
     </section>
 
@@ -35,14 +37,12 @@
 </template>
 
 <script setup>
+import { store } from "@/store/index";
 
-import { store } from '@/store/index'
-
-import VFooter from '@/components/VFooter.vue'
-import VHeader from '@/components/VHeader.vue'
+import VFooter from "@/components/VFooter.vue";
+import VHeader from "@/components/VHeader.vue";
 
 const getImageHighlight = (image) => {
-  return `${image}`
+  return `${image}`;
 };
-
 </script>

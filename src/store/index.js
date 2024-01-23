@@ -30,21 +30,24 @@ export const store = reactive({
     highlights: [
       {
         id: 1,
-        image: "./assets/images/pochete.jpg",
-        title: "pochetes",
-        aLtMessage: "",
+        image: "./assets/images/a-marca-agnesrasta-bolsas-acessorios.jpg",
+        title: "A Marca AgnesRasta bolsas e acessórios",
+        aLtMessage: "A Marca AgnesRasta bolsas e acessórios",
+        link: "https://www.atelieagnesrasta.com.br/a-marca-agnesrasta/"
       },
       {
         id: 2,
-        image: "./assets/images/bolsas.jpg",
-        title: "bolsas",
-        aLtMessage: "",
+        image: "./assets/images/nossa-loja-costura-criativa.jpg",
+        title: "Nossa loja de costura criativa",
+        aLtMessage: "Nossa loja de costura criativa",
+        link: "https://www.atelieagnesrasta.com.br/para-costurar/"
       },
       {
         id: 3,
-        image: "./assets/images/acessorios.jpg",
-        title: "Acessórios",
-        aLtMessage: "",
+        image: "./assets/images/acompanhe-nosso-canal-yYoutube.jpg",
+        title: "Acompanhe nosso Canal no Youtube",
+        aLtMessage: "Acompanhe nosso Canal no Youtube",
+        link: "https://www.youtube.com/channel/UCmQcTvzvC7t2SKMh50y8U5Q"
       },
     ],
     socialMedia: [

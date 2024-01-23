@@ -53,7 +53,7 @@
       </div>
     </div>
     <div class="w-full bg-brand-main mt-10">
-      <p class="text-sm text-white text-center pb-5 pt-2">
+      <p class="text-sm text-white text-center pb-5 pt-4">
         Copyright AgnesRasta Bolsas e Acessórios - 16930747000189 -
         {{ dataFormatada }}. Todos os direitos reservados.
       </p>
