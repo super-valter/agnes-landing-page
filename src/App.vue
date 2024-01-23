@@ -42,7 +42,7 @@ import VFooter from './components/VFooter.vue'
 import VHeader from './components/VHeader.vue'
 
 const getImageHighlight = (imgage) => {
-  return `src/assets/images/${imgage}.jpg`;
+  return `../assets/images/${imgage}.jpg`;
 };
 
 </script>
