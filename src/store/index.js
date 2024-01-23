@@ -26,6 +26,12 @@ export const store = reactive({
         icon: "location",
         link: "javascript:void(0)",
       },
+      {
+        id: 5,
+        info: "Instagran",
+        icon: "instagran",
+        link: "https://www.instagram.com/agnesrasta",
+      },
     ],
     highlights: [
       {

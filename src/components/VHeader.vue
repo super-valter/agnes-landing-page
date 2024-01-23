@@ -3,16 +3,17 @@
       <div class="container mx-auto">
         <nav>
           <ul class="grid grid-cols-3">
+            <template v-for="contatc in store.contatcs"
+              :key="contatc.id">
             <li
-              v-for="contatc in store.contatcs"
-              :key="contatc.id"
               class="flex justify-center text-white col-span-3 sm:col-span-1"
+              v-if="!(contatc.id === 2 || contatc.id === 4)"
             >
               <a
                 :href="contatc.link"
                 class="flex items-center"
-                v-if="contatc.id != 4"
                 :aria-label="contatc.icon"
+                target="_blank"
               >
                 <icon
                   :name="contatc.icon"
@@ -24,6 +25,7 @@
                 {{ contatc.info }}
               </a>
             </li>
+            </template>
           </ul>
         </nav>
       </div>
