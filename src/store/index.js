@@ -30,19 +30,19 @@ export const store = reactive({
     highlights: [
       {
         id: 1,
-        image: "pochete",
+        image: "./assets/images/pochete.jpg",
         title: "pochetes",
         aLtMessage: "",
       },
       {
         id: 2,
-        image: "bolsas",
+        image: "./assets/images/bolsas.jpg",
         title: "bolsas",
         aLtMessage: "",
       },
       {
         id: 3,
-        image: "acessorios",
+        image: "./assets/images/acessorios.jpg",
         title: "Acessórios",
         aLtMessage: "",
       },

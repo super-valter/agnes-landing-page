@@ -20,7 +20,7 @@
         class="col-span-3 sm:col-span-1"
       >
         <img
-          :src="`./src/assets/images/${highlight.image}.jpg`"
+          :src="highlight.image"
           :alt="highlight.title"
           class="mb-3 pr-3 w-full rounded-3xl"
         />
@@ -41,8 +41,8 @@ import { store } from '@/store/index'
 import VFooter from '@/components/VFooter.vue'
 import VHeader from '@/components/VHeader.vue'
 
-const getImageHighlight = (imgage) => {
-  return `./assets/images/${imgage}.jpg`;
+const getImageHighlight = (image) => {
+  return `${image}`
 };
 
 </script>
