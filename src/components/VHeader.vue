@@ -29,18 +29,9 @@
       </div>
     </header>
     <section class="container mx-auto flex justify-center">
-      <img
-        srcset="
-            ../assets/images/agnes-rasta-banner-320w.jpg 320w,
-            ../assets/images/agnes-rasta-banner-480w.jpg 480w,
-            ../assets/images/agnes-rasta-banner-800w.jpg 800w
-            ../assets/images/agnes-rasta-banner-1047w.jpg 1047w
-          "
-        sizes="(max-width: 320px) 280px,
-            (max-width: 480px) 440px,
-            (max-width: 800px) 800px,
-            1047px"
-        src="../assets/images/agnes-rasta-banner.jpg"
+
+        <img
+        src="../assets/images/agnes-rasta-banner-1047.jpg"
         alt="AgnesRasta Bolsas e Acessórios"
         class="w-full"
       />
